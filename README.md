@@ -12,7 +12,7 @@ even if the windows software is working with both of them.
 
 I set my battery to ID1 (first DIP switch ON).
 
-Copy everything to /data/ and chmod it to executable.
+Copy everything to /data/.
 
 Setup your switchable sockets (Shelly Plug S or AVM DECT switchable sockets) at turnon.sh and turnoff.sh.
 
