@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import serial
 import time
 import logging
@@ -27,10 +29,10 @@ def process_data(data):
     if len(data) < 10:
         print("Invalid data length.")
         return
-    
+
     received_chksum = int(data[-4:], 16)
     calc_chksum = chksum_data(data[2:-4])
-    
+
     if calc_chksum != received_chksum:
         print("Checksum error. Calculated: {}, Received: {}".format(calc_chksum, received_chksum))
         return
